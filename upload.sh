@@ -6,13 +6,14 @@ git pull
 
 # Remove any python compiled file.
 
-find . -type f -name ".pyc" -exec rm -f {} \;
+rm *.pyc
 
 # Remove all the swap files. ( This might also remove recovery files. So 
 # proceed with caution ).
 
-find . -type f -name ".*.swp" -exec rm -f {} \;
-find . -type f -name ".*.sw0" -exec rm -f {} \;
+rm .*swp
+rm .*swp
+rm .*swo
 
 # Add all the files which has been changed.
 
